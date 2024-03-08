@@ -1,0 +1,66 @@
+@media (min-width: 769px) {
+    header{
+        .toggle-btn{
+            display: none;
+        }
+        .nav, .menu{
+            display: flex;
+            align-items: center;
+        }
+        .menu{
+            .nav{
+                min-width: 1vw;
+                li{
+                    margin: 0em 0.5em;
+                    &:hover{
+                        transform: translateX(0);
+                        margin: 0em 2em;
+                        transition: 0.4s;
+                    }
+                }
+            }
+            button{
+                margin: 1em;
+            }
+        }
+    }
+    .container{
+        padding: 6vh 12vw;
+    }
+    #home{
+        h1{
+            font-size: 4em;
+        }
+        h2{
+            font-size: 2em;
+        }
+    }
+    .row{
+        flex-direction: row;
+    }
+    #about{
+        .row{
+            .about-mission, .about-values, .about-vision, .about-text{
+                margin: 0em 1em;
+            }
+        }
+    }
+    #projects{
+        .projects-square{
+            width: calc(25% - 2px);
+        }
+    }
+    footer{
+        min-height: 1vh;
+        .row{
+            .col{
+                .logo{
+                    display: block;
+                }
+                form{
+                    margin-bottom: 0em;
+                }
+            }
+        }
+    }
+}

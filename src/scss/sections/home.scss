@@ -1,0 +1,26 @@
+#home{
+    background-image: url('./img171.jpg');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    h1{
+        color: var(--secondary-color);
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    a{
+        color: var(--quaternary-color);
+        #arrow-down{
+            font-size: 2em;
+            animation: arrow-down 1.2s ease-in-out infinite;
+            z-index: 1;
+        }
+    }
+    .container{
+        min-height: 90vh;
+    }
+}

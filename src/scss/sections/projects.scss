@@ -1,0 +1,35 @@
+#projects-title{
+    @extend .flex-central;
+    width: 100%;
+}
+
+#projects{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    #project-1{
+        background-color: var(--quinary-color);
+    }
+    #project-2{
+        background-color: var(--senary-color);
+    }
+    #project-3{
+        background-color: var(--secondary-color);
+    }
+    #project-4{
+        background-color: var(--tertiary-color);
+    }
+    .projects-square{
+        width: 100%;
+        padding: 1.5em;
+        min-height: 25vh;
+        color: var(--bg-color);
+        margin: 1px;
+        h3{
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+    }
+}

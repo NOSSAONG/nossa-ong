@@ -1,0 +1,37 @@
+//Imports
+@import './layout/general.scss';
+@import './layout/animations.scss';
+@import './sections/header.scss';
+@import './sections/home.scss';
+@import './sections/about.scss';
+@import './sections/team.scss';
+@import './sections/projects.scss';
+@import './sections/footer.scss';
+@import './layout/responsivity.scss';
+
+//Colors
+:root{
+    --bg-color: #fff;
+    --primary-color: #026A6E;
+    --secondary-color: #AF7F6B;
+    --tertiary-color: #0071BC;
+    --quaternary-color: #B29608;
+    --quinary-color: #82A074;
+    --senary-color: #FFA017;
+    --contrast-color: #1C1C1C;
+}
+
+//Extends
+.flex-central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-visible{
+    display: block;
+}
+
+.menu-invisible{
+    display: none;
+}

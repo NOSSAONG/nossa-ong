@@ -1,0 +1,122 @@
+//HTML Structure
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+:target {
+    scroll-margin-top: 10vh;
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: var(--contrast-color);
+    background-color: var(--bg-color);
+}
+
+//Logo
+.logo{
+    max-width: 60px;
+    height: auto;
+    &:hover{
+        scale: 1.1;
+        transition: 0.3s;
+    }
+}
+
+//Scrollbar
+body{
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) var(--bg-color);
+}
+::-webkit-scrollbar{
+    width: 11px;             
+}
+::-webkit-scrollbar-track{
+    background: var(--secondary-color);
+}  
+::-webkit-scrollbar-thumb{
+    background-color: var(--bg-color);    
+    border-radius: 20px;      
+    border: 2px solid var(--secondary-color); 
+}
+//
+
+::selection{
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+}
+
+//Buttons
+.btn-primary{
+    cursor: pointer;
+    margin: 1em;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    &:hover{
+        padding: 10px 40px;
+        transition: 0.4s;
+    }
+}
+.btn-light{
+    @extend .btn-primary;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+.btn-light-outline{
+    @extend .btn-primary;
+    background: none;
+    border: 1px solid var(--bg-color);
+    &:hover{
+        background-color: var(--bg-color);
+        color: var(--primary-color);
+        transition: 0.4s;
+    }
+}
+
+//Texts
+.subtitle{
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 1em;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+//Container and background filter
+.container{
+    @extend .flex-central;
+    flex-direction: column;
+    padding: 4vh 8vw;
+}
+.filter{
+    background-color: rgba(0,0,0, 0.7);
+    color: var(--bg-color);
+    height: 100%;
+}
+
+//Correction Default Styles
+textarea{
+    resize: none;
+}
+a:focus {
+    outline: none;
+}
+
+//Positions
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    .col{
+        width: 100%;
+    }
+}

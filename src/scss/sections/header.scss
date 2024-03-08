@@ -1,0 +1,92 @@
+header{
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    box-shadow: 0px 2px 3px rgba(0,0,0, 0.4);
+    z-index: 99;
+    .toggle-btn{
+        cursor: pointer;
+        color: var(--bg-color);
+        background: none;
+        border: none;
+        &:focus{
+            border: none;
+        }
+    }
+    .menu{
+        .nav{
+            min-width: 90vw;
+            margin: 1em 0em;
+            list-style: none;
+            li{
+                margin: 0.2em 0em;
+                a{
+                    color: var(--bg-color);
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                &:hover{
+                    transform: translateX(15px);
+                    a{
+                        text-decoration: underline;
+                    }
+                    transition: 0.3s;
+                }
+            }
+        }
+        button{
+            margin: 0em;
+        }
+    }
+    #donate-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0, 0.5);
+        z-index: 999;
+        @extend .flex-central;
+        .donate-box{
+            display: block;
+            max-width: 600px;
+            min-height: 1vh;
+            background-color: var(--bg-color);
+            margin: 2em;
+            padding: 2em;
+            border-radius: 30px;
+            .donate-header{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                h2{
+                    width: 90%;
+                }
+                button{
+                    font-size: 1.5em;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    color: var(--primary-color);
+                    &:focus{
+                        border: none;
+                    }
+                }
+            }
+            .donate-content{
+                max-width: 100%;
+                text-align: center;
+                img{
+                    width: 80%;
+                    margin: 1em;
+                }
+            }
+        }
+    }
+}

@@ -22,9 +22,16 @@ export default function Footer() {
 
                 <div className="col">
                     <img src="./icon2.png" alt="Logo Nossa Ong" className="logo"/>
-                    <h3>Nossas Redes Sociais: <a href="" target="_blank" rel="noopener noreferrer" className='icon'><FontAwesomeIcon icon={faInstagram} /></a></h3>
+                    <p>NOSSA ONG - Associação em Defesa dos Direitos Sociais das Favelas, Aldeias Indígenas, Povos Quilombolas, 
+                        Ribeirinhos e Meio Ambiente - 52.093.072/0001-24
+                    </p>
+                    <h3>Nossas Redes Sociais: {" "}
+                        <a href="https://www.instagram.com/nossaong.br/" target="_blank" rel="noopener noreferrer" className='icon'>
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </a>
+                    </h3>
                     <p>Créditos de imagem: Giulianne Martins / @origemterrena </p>
-                    <a href="https://fernandocarvalhodev.com" target="_blank" rel="noopener noreferrer" id='credits'>
+                    <a href="https://fernandocarvalhodev.com" target="_blank" rel="noopener noreferrer" id='developer-credits'>
                         Desenvolvido voluntariamente por Fernando Carvalho
                     </a>
                 </div>

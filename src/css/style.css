@@ -67,6 +67,15 @@ body {
   transition: 0.4s;
 }
 
+.btn-lg {
+  padding: 15px 30px;
+  font-size: 1em;
+}
+.btn-lg:hover {
+  padding: 15px 45px;
+  transition: 0.4s;
+}
+
 .btn-light {
   background-color: var(--bg-color);
   color: var(--primary-color);
@@ -247,26 +256,33 @@ header #donate-container .donate-box .donate-content img {
   min-height: 90vh;
 }
 
-#about .row .col {
-  margin: 1em 0em;
+#about {
+  flex-direction: column;
+  min-height: 90vh;
 }
-#about .row .about-text {
+#about .about-text {
   flex-direction: column;
 }
-#about .row .about-text p {
+#about .about-text p {
   font-size: 1.1em;
+  margin: 1em 0em;
+  text-align: justify;
 }
-#about .row .about-mission, #about .row .about-values, #about .row .about-vision {
+#about .about-text .about-buttons {
+  flex-wrap: wrap;
+}
+#about .row .col {
   padding: 1.5em;
   border-radius: 30px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
   background-color: var(--primary-color);
   color: var(--bg-color);
+  margin: 1em 0em;
 }
-#about .row .about-mission h3, #about .row .about-values h3, #about .row .about-vision h3 {
+#about .row .col h3 {
   margin-bottom: 10px;
 }
-#about .row .about-mission:hover, #about .row .about-values:hover, #about .row .about-vision:hover {
+#about .row .col:hover {
   background-color: var(--quaternary-color);
   transition: 0.4s;
 }
@@ -356,11 +372,9 @@ footer .row .col form button {
   margin: 1em 0em;
 }
 footer .row .col h3 {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-right: 0.5em;
-}
-footer .row .col p {
-  margin: 15px 0px;
+  margin-bottom: 20px;
 }
 footer .row .col a {
   color: var(--bg-color);
@@ -379,9 +393,9 @@ footer .row .col .logo {
 footer .row .col .icon {
   font-size: 1.2em;
 }
-footer .row .col #credits {
-  margin-top: 3em;
+footer .row .col #developer-credits {
   font-weight: bold;
+  margin: 10px 0px;
 }
 
 @media (min-width: 769px) {
@@ -418,8 +432,14 @@ footer .row .col #credits {
   .row {
     flex-direction: row;
   }
-  #about .row .about-mission, #about .row .about-values, #about .row .about-vision, #about .row .about-text {
+  #about .about-text p {
+    margin: 1em;
+  }
+  #about .about-text .about-buttons button {
     margin: 0em 1em;
+  }
+  #about .row .col {
+    margin: 1em;
   }
   #projects .projects-square {
     width: calc(25% - 2px);
@@ -445,7 +465,7 @@ footer .row .col #credits {
   --contrast-color: #1C1C1C;
 }
 
-.flex-central, .container, header #donate-container, #about .row .about-text, #projects-title {
+.flex-central, .container, header #donate-container, #about, #about .about-text, #about .about-text .about-buttons, #projects-title {
   display: flex;
   justify-content: center;
   align-items: center;

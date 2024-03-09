@@ -6,7 +6,7 @@ export default function Home () {
         <section id="home">
             <div className="container filter">
                 <div className="content">
-                    <h1>Nossa ONG</h1>
+                    <h1>NOSSA ONG</h1>
                     <h2>Construindo um mundo melhor.</h2>
                     <a href="#about"><FontAwesomeIcon icon={faAnglesDown} id='arrow-down'/></a>
                 </div>

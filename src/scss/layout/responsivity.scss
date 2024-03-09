@@ -39,9 +39,19 @@
         flex-direction: row;
     }
     #about{
+        .about-text{
+            p{
+                margin: 1em;
+            }
+            .about-buttons{
+                button{
+                    margin: 0em 1em;
+                }
+            }
+        }
         .row{
-            .about-mission, .about-values, .about-vision, .about-text{
-                margin: 0em 1em;
+            .col{
+                margin: 1em;
             }
         }
     }

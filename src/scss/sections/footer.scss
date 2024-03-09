@@ -45,11 +45,9 @@ footer{
 
             //COL B
             h3{
-                font-size: 1.5em;
-                margin-right: 0.5em;   
-            }
-            p{
-                margin: 15px 0px;
+                font-size: 1em;
+                margin-right: 0.5em;
+                margin-bottom: 20px;   
             }
             a{
                 color: var(--bg-color);
@@ -68,9 +66,9 @@ footer{
             .icon{
                 font-size: 1.2em;
             }
-            #credits{
-                margin-top: 3em;
+            #developer-credits{
                 font-weight: bold;
+                margin: 10px 0px;
             }
         }
     }

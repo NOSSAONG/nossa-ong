@@ -34,10 +34,10 @@ export default function About () {
                 <div className="about-text">
                     <p>Entre para a nossa família! Seja para ajudar ou para ser ajudado, as nossas portas estão abertas para você!</p>
                     <div className="about-buttons">
-                    <a href="https://forms.gle/6JcmZfQxzndtb8YL6" target="_blank" rel="noopener noreferrer" id='credits'>
+                    <a href="https://forms.gle/6JcmZfQxzndtb8YL6" target="_blank" rel="noopener noreferrer">
                             <button className="btn-primary btn-lg"> Seja um Voluntário </button>
                         </a>
-                        <a href="https://forms.gle/66jYKA8fyem9qby27" target="_blank" rel="noopener noreferrer" id='credits'>
+                        <a href="https://forms.gle/66jYKA8fyem9qby27" target="_blank" rel="noopener noreferrer">
                             <button className="btn-primary btn-lg"> Seja um Beneficiário </button>
                         </a>
                     </div>

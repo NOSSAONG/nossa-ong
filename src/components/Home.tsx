@@ -8,7 +8,7 @@ export default function Home () {
                 <div className="content">
                     <h1>NOSSA ONG</h1>
                     <h2>Construindo um mundo melhor.</h2>
-                    <a href="#about"><FontAwesomeIcon icon={faAnglesDown} id='arrow-down'/></a>
+                    <a href="#about" aria-label="about"><FontAwesomeIcon icon={faAnglesDown} id='arrow-down'/></a>
                 </div>
             </div>
         </section>

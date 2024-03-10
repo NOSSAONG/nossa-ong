@@ -27,7 +27,7 @@ export default function Header () {
     return (
         <header>
 
-            <button className="toggle-btn" onClick={toggleMenu}>
+            <button className="toggle-btn" onClick={toggleMenu} aria-label="menu">
                 <FontAwesomeIcon icon={faBars} />
             </button>
 

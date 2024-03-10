@@ -26,7 +26,7 @@ export default function Footer() {
                         Ribeirinhos e Meio Ambiente - 52.093.072/0001-24
                     </p>
                     <h3>Nossas Redes Sociais: {" "}
-                        <a href="https://www.instagram.com/nossaong.br/" target="_blank" rel="noopener noreferrer" className='icon'>
+                        <a href="https://www.instagram.com/nossaong.br/" target="_blank" rel="noopener noreferrer" className='icon' aria-label="instagram">
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
                     </h3>

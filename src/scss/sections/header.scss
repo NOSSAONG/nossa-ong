@@ -81,9 +81,11 @@ header{
             }
             .donate-content{
                 max-width: 100%;
+                max-height: 80vh;
                 text-align: center;
                 img{
                     width: 80%;
+                    max-height: 70vh;
                     margin: 1em;
                 }
             }

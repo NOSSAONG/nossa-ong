@@ -375,12 +375,15 @@ footer .row .col form button {
 }
 footer .row .col h3 {
   font-size: 1em;
-  margin-right: 0.5em;
   margin-bottom: 20px;
+}
+footer .row .col h3 span {
+  font-weight: 400;
 }
 footer .row .col a {
   color: var(--bg-color);
   text-decoration: none;
+  margin-left: 0.4em;
   opacity: 0.8;
 }
 footer .row .col a:hover {

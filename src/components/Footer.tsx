@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
     return (
@@ -29,7 +29,11 @@ export default function Footer() {
                         <a href="https://www.instagram.com/nossaong.br/" target="_blank" rel="noopener noreferrer" className='icon' aria-label="instagram">
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
+                        <a href="https://wa.me//5532933003063" target="_blank" rel="noopener noreferrer" className='icon' aria-label="whatsapp">
+                            <FontAwesomeIcon icon={faWhatsapp} />
+                        </a>
                     </h3>
+                    <h3>Contato: <span>(32) 93300-3063</span></h3> 
                     <p>Créditos de imagem: Giulianne Martins / @origemterrena </p>
                     <a href="https://fernandocarvalhodev.com" target="_blank" rel="noopener noreferrer" id='developer-credits'>
                         Desenvolvido voluntariamente por Fernando Carvalho

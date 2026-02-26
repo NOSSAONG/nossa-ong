@@ -35,9 +35,6 @@ export default function Footer() {
                     </h3>
                     <h3>Contato: <span>(32) 93300-3063</span></h3> 
                     <p>Créditos de imagem: Giulianne Martins / @origemterrena </p>
-                    <a href="https://fernandocarvalhodev.com" target="_blank" rel="noopener noreferrer" id='developer-credits'>
-                        Desenvolvido voluntariamente por Fernando Carvalho
-                    </a>
                 </div>
 
             </div>
